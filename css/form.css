@@ -1,0 +1,102 @@
+
+#headlineToAddMovie{
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-size:2.8rem;
+        color: rgb(202, 8, 8);
+        letter-spacing: 5px;
+        font-weight: bolder;
+    }
+
+#containerForm{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#formAddMovie{
+width: 50%;
+text-align: center;
+margin-top: 3%;
+
+}
+
+.inpt{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#formBtn{
+    width:40%;
+    font-family: 'Poppins', sans-serif;
+    height: 30px;
+    color: rgb(202, 8, 8);
+    border-radius: 5px;
+    transition: box shadow 300ms ease;
+}
+#formBtn:hover{
+    box-shadow: 
+    0 0 10px rgb(243, 6, 6),
+    0 0 15px rgb(243, 6, 6),
+    0 0 20px rgb(243, 6, 6);
+    color: #000;
+    border: solid rgb(243, 6, 6) 2px;
+}
+
+#containerPicture{
+    display: flex;
+    justify-content: center;
+}
+#picture{
+    width: 800px;
+    border-radius: 15px;
+}
+#lightBar{
+    animation: lightBar 3s linear infinite;
+    height: 10px;
+    width:100% ;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 
+    0 0 10px rgb(243, 6, 6),
+    0 0 15px rgb(243, 6, 6),
+    0 0 20px rgb(243, 6, 6),
+    0 0 30px rgb(243, 6, 6);
+}
+
+@keyframes lightBar{
+    0%,5%{
+        transform: translateX(0) scaleY(0) ;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    #picture{
+        width: 600px;
+    }
+}
+@media screen and (max-width:600px) {
+    .inpt{
+        width: 70%;
+    }
+    #picture{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .inpt{
+        width: 90%;
+    }
+    #formBtn{
+        width:45%;
+    }
+    #picture{
+        width: 200px;
+    }
+}
